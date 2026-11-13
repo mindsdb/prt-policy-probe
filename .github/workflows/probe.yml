@@ -1,0 +1,10 @@
+name: probe
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+permissions: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo probe
